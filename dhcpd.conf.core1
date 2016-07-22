@@ -1,0 +1,45 @@
+#
+# quakecon dhcpd.conf
+#
+
+lease-file-name "/var/lib/dhcp/dhcpd.leases";
+ddns-update-style none;
+authoritative;
+log-facility local7;
+
+option domain-name "at.quakecon.org";
+option domain-name-servers 172.16.1.102, 172.16.1.103, 172.16.1.104;
+
+default-lease-time 86400;
+max-lease-time 86400;
+
+failover peer "dhcp-failover" {
+  primary;
+  address 172.16.1.100;
+  peer address 172.16.1.101;
+  max-response-delay 30;      # After 30 seconds, assume the peer has
+			      # failed
+  max-unacked-updates 10;
+  load balance max seconds 3; # Wait three second before secondary
+			      # tries to give out a lease
+  mclt 600; # Leases only renew for 10min w/o contact with the other
+	    # server. As a consequence, it will take this long for a
+	    # faild server to recover and start offering leases (will
+	    # wait for unknown leases to expire
+	    
+  split 128;  # Primary and secondary servers equally likely to give
+	      # out leases
+}
+
+include "dhcpd.conf.noc";
+include "dhcpd.conf.tourney";
+include "dhcpd.conf.sponsor";
+include "dhcpd.conf.byoc";
+include "dhcpd.conf.mainstage";
+include "dhcpd.conf.press";
+include "dhcpd.conf.quickdraw";
+include "dhcpd.conf.reg";
+include "dhcpd.conf.staticip";
+include "dhcpd.conf.vipreg";
+include "dhcpd.conf.metro";
+include "dhcpd.conf.uac";

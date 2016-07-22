@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+set -u
+
+dhcpd -t -cf dhcpd.conf.core1
+dhcpd -t -cf dhcpd.conf.core2

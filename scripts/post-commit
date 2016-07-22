@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cp dhcpd.conf* /etc/dhcp
+mv /etc/dhcp/dhcpd.conf.core1 /etc/dhcp.conf
+rm /etc/dhcp/dhcpd.conf.core2
+systemctl restart dhcpd
+
+scp dhcpd.conf* 172.16.1.101:/etc/dhcp
+ssh 172.16.1.101 rm /etc/dhcp/dhcpd.conf.core1
+ssh 172.16.1.101 mv /etc/dhcp/dhcpd.conf.core2 /etc/dhcp/dhcpd.conf
+ssh 172.16.1.101 systemctl restart dhcpd
