@@ -1,11 +1,20 @@
 #!/bin/bash
 
+if [ "$(hostname -s)" == "core1" ]; then
+    OTHER="172.16.1.101"
+elif [ "$(hostname -s)" == "core2" ]; then
+    OTHER="172.16.1.100"
+else
+    OTHER=""
+fi
+
 cp dhcpd.conf* /etc/dhcp
-mv /etc/dhcp/dhcpd.conf.core1 /etc/dhcp.conf
-rm /etc/dhcp/dhcpd.conf.core2
+mv /etc/dhcp/dhcpd.conf.$(hostname -s) /etc/dhcp/dhcpd.conf
 systemctl restart dhcpd
 
-scp dhcpd.conf* 172.16.1.101:/etc/dhcp
-ssh 172.16.1.101 rm /etc/dhcp/dhcpd.conf.core1
-ssh 172.16.1.101 mv /etc/dhcp/dhcpd.conf.core2 /etc/dhcp/dhcpd.conf
-ssh 172.16.1.101 systemctl restart dhcpd
+if [ "$OTHER"x != "x" ]; then
+    scp dhcpd.conf* ${OTHER}:/etc/dhcp
+    ssh $OTHER rm /etc/dhcp/dhcpd.conf.core1
+    ssh $OTHER mv /etc/dhcp/dhcpd.conf.core2 /etc/dhcp/dhcpd.conf
+    ssh $OTHER systemctl restart dhcpd
+fi
