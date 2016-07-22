@@ -1,0 +1,15 @@
+#
+# Quakecon 2015 Host Static IP configuration
+#
+host chantilly-casters {
+  hardware ethernet ac:22:0b:31:e9:f8;
+  fixed-address 172.17.2.80;
+}
+host wedgewood-foyer-casters {
+  hardware ethernet 60:a4:4c:28:6d:30;
+  fixed-address 172.17.2.166;
+}
+host mainstage-caster {
+  hardware ethernet 60:a4:4c:28:6d:30;
+  fixed-address 172.24.3.130;
+}

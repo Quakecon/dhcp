@@ -1,0 +1,62 @@
+#
+# Quakecon 2013 Tourney DHCP configuration
+#
+# Tourney Admin
+subnet 172.17.1.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.17.1.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.17.1.50 172.17.1.254;
+  }
+}
+
+# Tourney Users
+subnet 172.17.2.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.17.2.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.17.2.50 172.17.2.254;
+  }
+}
+
+# Tourney Stream 1
+subnet 172.17.3.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.17.3.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.17.3.130 172.17.3.254;
+  }
+}
+
+# Tourney Stream 2
+subnet 172.17.4.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.17.4.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.17.4.130 172.17.4.254;
+  }
+}
+
+# Tourney Servers
+subnet 172.17.5.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.17.5.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.17.5.130 172.17.5.254;
+  }
+}
+
+# Tourney Stream The Third
+subnet 172.24.3.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.24.3.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.24.3.130 172.24.3.254;
+  }
+}

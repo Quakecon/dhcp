@@ -1,0 +1,12 @@
+#
+# Metropolitan Room
+#
+
+subnet 172.24.1.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.24.1.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.24.1.130 172.24.1.254;
+  }
+}

@@ -1,0 +1,64 @@
+# SERVER
+subnet 172.16.1.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.16.1.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.16.1.242 172.16.1.250;
+  }
+}
+
+
+
+# ----------------------------------------
+# NOC Wireless
+#
+subnet 172.16.8.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.16.8.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.16.8.130 172.16.8.254;
+  }
+}
+
+subnet 172.16.9.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.16.9.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.16.9.130 172.16.9.254;
+  }
+}
+
+
+subnet 172.16.14.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.16.14.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.16.14.130 172.16.14.254;
+  }
+}
+
+shared-network NOC {
+    subnet 12.193.242.64
+     netmask 255.255.255.224 {
+       option subnet-mask 255.255.255.224;
+       option routers 12.193.242.65;
+       option domain-name-servers 172.16.1.104, 172.16.1.103;
+       pool {
+          failover peer "dhcp-failover";
+          range 12.193.242.66 12.193.242.94;
+       }
+    }
+    subnet 12.193.243.0 netmask 255.255.255.224 {
+        option subnet-mask 255.255.255.224;
+        option routers 12.193.243.1;
+        option domain-name-servers 172.16.1.103, 172.16.1.104;
+        pool {
+            failover peer "dhcp-failover";
+            range 12.193.243.2 12.193.243.29;
+        }
+    }
+}

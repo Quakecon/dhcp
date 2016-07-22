@@ -1,0 +1,22 @@
+#
+# Quakecon 2011 Main Stage DHCP configuration
+#
+
+subnet 172.20.1.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.20.1.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.20.1.132 172.20.1.254;
+  }
+}
+
+subnet 172.24.2.0 netmask 255.255.255.0 {
+  option subnet-mask 255.255.255.0;
+  option routers 172.24.2.1;
+  pool {
+    failover peer "dhcp-failover";
+    range 172.24.2.130 172.24.2.254;
+  }
+}
+

@@ -1,0 +1,1320 @@
+subnet 12.97.0.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.2 12.97.0.26;
+   }
+}
+subnet 12.97.0.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.34 12.97.0.58;
+   }
+}
+subnet 12.97.0.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.66 12.97.0.90;
+   }
+}
+subnet 12.97.0.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.98 12.97.0.122;
+   }
+}
+subnet 12.97.0.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.130 12.97.0.154;
+   }
+}
+subnet 12.97.0.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.162 12.97.0.186;
+   }
+}
+subnet 12.97.0.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.194 12.97.0.218;
+   }
+}
+subnet 12.97.0.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.0.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.0.226 12.97.0.250;
+   }
+}
+subnet 12.97.1.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.2 12.97.1.26;
+   }
+}
+subnet 12.97.1.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.34 12.97.1.58;
+   }
+}
+subnet 12.97.1.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.66 12.97.1.90;
+   }
+}
+subnet 12.97.1.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.98 12.97.1.122;
+   }
+}
+subnet 12.97.1.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.130 12.97.1.154;
+   }
+}
+subnet 12.97.1.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.162 12.97.1.186;
+   }
+}
+subnet 12.97.1.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.194 12.97.1.218;
+   }
+}
+subnet 12.97.1.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.1.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.1.226 12.97.1.250;
+   }
+}
+subnet 12.97.2.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.2 12.97.2.26;
+   }
+}
+subnet 12.97.2.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.34 12.97.2.58;
+   }
+}
+subnet 12.97.2.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.66 12.97.2.90;
+   }
+}
+subnet 12.97.2.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.98 12.97.2.122;
+   }
+}
+subnet 12.97.2.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.130 12.97.2.154;
+   }
+}
+subnet 12.97.2.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.162 12.97.2.186;
+   }
+}
+subnet 12.97.2.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.194 12.97.2.218;
+   }
+}
+subnet 12.97.2.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.2.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.2.226 12.97.2.250;
+   }
+}
+subnet 12.97.3.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.2 12.97.3.26;
+   }
+}
+subnet 12.97.3.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.34 12.97.3.58;
+   }
+}
+subnet 12.97.3.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.66 12.97.3.90;
+   }
+}
+subnet 12.97.3.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.98 12.97.3.122;
+   }
+}
+subnet 12.97.3.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.130 12.97.3.154;
+   }
+}
+subnet 12.97.3.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.162 12.97.3.186;
+   }
+}
+subnet 12.97.3.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.194 12.97.3.218;
+   }
+}
+subnet 12.97.3.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.3.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.3.226 12.97.3.250;
+   }
+}
+subnet 12.97.4.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.2 12.97.4.26;
+   }
+}
+subnet 12.97.4.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.34 12.97.4.58;
+   }
+}
+subnet 12.97.4.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.66 12.97.4.90;
+   }
+}
+subnet 12.97.4.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.98 12.97.4.122;
+   }
+}
+subnet 12.97.4.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.130 12.97.4.154;
+   }
+}
+subnet 12.97.4.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.162 12.97.4.186;
+   }
+}
+subnet 12.97.4.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.194 12.97.4.218;
+   }
+}
+subnet 12.97.4.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.4.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.4.226 12.97.4.250;
+   }
+}
+subnet 12.97.5.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.2 12.97.5.26;
+   }
+}
+subnet 12.97.5.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.34 12.97.5.58;
+   }
+}
+subnet 12.97.5.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.66 12.97.5.90;
+   }
+}
+subnet 12.97.5.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.98 12.97.5.122;
+   }
+}
+subnet 12.97.5.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.130 12.97.5.154;
+   }
+}
+subnet 12.97.5.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.162 12.97.5.186;
+   }
+}
+subnet 12.97.5.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.194 12.97.5.218;
+   }
+}
+subnet 12.97.5.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.5.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.5.226 12.97.5.250;
+   }
+}
+subnet 12.97.6.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.2 12.97.6.26;
+   }
+}
+subnet 12.97.6.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.34 12.97.6.58;
+   }
+}
+subnet 12.97.6.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.66 12.97.6.90;
+   }
+}
+subnet 12.97.6.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.98 12.97.6.122;
+   }
+}
+subnet 12.97.6.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.130 12.97.6.154;
+   }
+}
+subnet 12.97.6.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.162 12.97.6.186;
+   }
+}
+subnet 12.97.6.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.194 12.97.6.218;
+   }
+}
+subnet 12.97.6.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.6.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.6.226 12.97.6.250;
+   }
+}
+subnet 12.97.7.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.2 12.97.7.26;
+   }
+}
+subnet 12.97.7.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.34 12.97.7.58;
+   }
+}
+subnet 12.97.7.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.66 12.97.7.90;
+   }
+}
+subnet 12.97.7.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.98 12.97.7.122;
+   }
+}
+subnet 12.97.7.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.130 12.97.7.154;
+   }
+}
+subnet 12.97.7.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.162 12.97.7.186;
+   }
+}
+subnet 12.97.7.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.194 12.97.7.218;
+   }
+}
+subnet 12.97.7.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.7.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.7.226 12.97.7.250;
+   }
+}
+subnet 12.97.8.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.2 12.97.8.26;
+   }
+}
+subnet 12.97.8.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.34 12.97.8.58;
+   }
+}
+subnet 12.97.8.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.66 12.97.8.90;
+   }
+}
+subnet 12.97.8.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.98 12.97.8.122;
+   }
+}
+subnet 12.97.8.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.130 12.97.8.154;
+   }
+}
+subnet 12.97.8.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.162 12.97.8.186;
+   }
+}
+subnet 12.97.8.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.194 12.97.8.218;
+   }
+}
+subnet 12.97.8.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.8.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.8.226 12.97.8.250;
+   }
+}
+subnet 12.97.9.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.2 12.97.9.26;
+   }
+}
+subnet 12.97.9.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.34 12.97.9.58;
+   }
+}
+subnet 12.97.9.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.66 12.97.9.90;
+   }
+}
+subnet 12.97.9.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.98 12.97.9.122;
+   }
+}
+subnet 12.97.9.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.130 12.97.9.154;
+   }
+}
+subnet 12.97.9.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.162 12.97.9.186;
+   }
+}
+subnet 12.97.9.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.194 12.97.9.218;
+   }
+}
+subnet 12.97.9.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.9.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.9.226 12.97.9.250;
+   }
+}
+subnet 12.97.10.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.2 12.97.10.26;
+   }
+}
+subnet 12.97.10.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.34 12.97.10.58;
+   }
+}
+subnet 12.97.10.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.66 12.97.10.90;
+   }
+}
+subnet 12.97.10.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.98 12.97.10.122;
+   }
+}
+subnet 12.97.10.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.130 12.97.10.154;
+   }
+}
+subnet 12.97.10.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.162 12.97.10.186;
+   }
+}
+subnet 12.97.10.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.194 12.97.10.218;
+   }
+}
+subnet 12.97.10.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.10.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.10.226 12.97.10.250;
+   }
+}
+subnet 12.97.11.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.2 12.97.11.26;
+   }
+}
+subnet 12.97.11.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.34 12.97.11.58;
+   }
+}
+subnet 12.97.11.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.66 12.97.11.90;
+   }
+}
+subnet 12.97.11.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.98 12.97.11.122;
+   }
+}
+subnet 12.97.11.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.130 12.97.11.154;
+   }
+}
+subnet 12.97.11.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.162 12.97.11.186;
+   }
+}
+subnet 12.97.11.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.194 12.97.11.218;
+   }
+}
+subnet 12.97.11.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.11.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.11.226 12.97.11.250;
+   }
+}
+subnet 12.97.12.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.2 12.97.12.26;
+   }
+}
+subnet 12.97.12.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.34 12.97.12.58;
+   }
+}
+subnet 12.97.12.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.66 12.97.12.90;
+   }
+}
+subnet 12.97.12.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.98 12.97.12.122;
+   }
+}
+subnet 12.97.12.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.130 12.97.12.154;
+   }
+}
+subnet 12.97.12.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.162 12.97.12.186;
+   }
+}
+subnet 12.97.12.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.194 12.97.12.218;
+   }
+}
+subnet 12.97.12.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.12.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.12.226 12.97.12.250;
+   }
+}
+subnet 12.97.13.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.2 12.97.13.26;
+   }
+}
+subnet 12.97.13.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.34 12.97.13.58;
+   }
+}
+subnet 12.97.13.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.66 12.97.13.90;
+   }
+}
+subnet 12.97.13.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.98 12.97.13.122;
+   }
+}
+subnet 12.97.13.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.130 12.97.13.154;
+   }
+}
+subnet 12.97.13.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.162 12.97.13.186;
+   }
+}
+subnet 12.97.13.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.194 12.97.13.218;
+   }
+}
+subnet 12.97.13.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.13.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.13.226 12.97.13.250;
+   }
+}
+subnet 12.97.14.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.2 12.97.14.26;
+   }
+}
+subnet 12.97.14.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.34 12.97.14.58;
+   }
+}
+subnet 12.97.14.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.66 12.97.14.90;
+   }
+}
+subnet 12.97.14.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.98 12.97.14.122;
+   }
+}
+subnet 12.97.14.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.130 12.97.14.154;
+   }
+}
+subnet 12.97.14.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.162 12.97.14.186;
+   }
+}
+subnet 12.97.14.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.194 12.97.14.218;
+   }
+}
+subnet 12.97.14.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.14.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.14.226 12.97.14.250;
+   }
+}
+subnet 12.97.15.0
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.1;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.2 12.97.15.26;
+   }
+}
+subnet 12.97.15.32
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.33;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.34 12.97.15.58;
+   }
+}
+subnet 12.97.15.64
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.65;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.66 12.97.15.90;
+   }
+}
+subnet 12.97.15.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.97;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.98 12.97.15.122;
+   }
+}
+subnet 12.97.15.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.129;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.130 12.97.15.154;
+   }
+}
+subnet 12.97.15.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.161;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.162 12.97.15.186;
+   }
+}
+subnet 12.97.15.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.193;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.194 12.97.15.218;
+   }
+}
+subnet 12.97.15.224
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.97.15.225;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.97.15.226 12.97.15.250;
+   }
+}
+subnet 12.193.242.96
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.193.242.97;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.193.242.98 12.193.242.122;
+   }
+}
+subnet 12.193.242.128
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.193.242.129;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.193.242.130 12.193.242.154;
+   }
+}
+subnet 12.193.242.160
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.193.242.161;
+   option domain-name-servers 172.16.1.104, 172.16.1.103;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.193.242.162 12.193.242.186;
+   }
+}
+subnet 12.193.242.192
+ netmask 255.255.255.224 {
+   option subnet-mask 255.255.255.224;
+   option routers 12.193.242.193;
+   option domain-name-servers 172.16.1.103, 172.16.1.104;
+   pool {
+      failover peer "dhcp-failover";
+      range 12.193.242.194 12.193.242.218;
+   }
+}
