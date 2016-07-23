@@ -3,7 +3,6 @@ Description=ISC DHCP IPv4 server
 Documentation=man:dhcpd(8)
 Wants=network-online.target
 After=network-online.target
-After=time-sync.target
 ConditionPathExists=/etc/default/isc-dhcp-server
 ConditionPathExists=|/etc/ltsp/dhcpd.conf
 ConditionPathExists=|/etc/dhcp/dhcpd.conf
