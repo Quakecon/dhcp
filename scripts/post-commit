@@ -13,8 +13,9 @@ mv /etc/dhcp/dhcpd.conf.$(hostname -s) /etc/dhcp/dhcpd.conf
 sudo systemctl restart isc-dhcp-server.service
 
 if [ "$OTHER"x != "x" ]; then
+    echo "Waiting for a bit before I kick the other node"
+    sleep 10
     scp dhcpd.conf* ${OTHER}:/etc/dhcp
-    ssh $OTHER rm /etc/dhcp/dhcpd.conf.core1
-    ssh $OTHER mv /etc/dhcp/dhcpd.conf.core2 /etc/dhcp/dhcpd.conf
+    ssh $OTHER mv /etc/dhcp/dhcpd.conf.$(hostname -s) /etc/dhcp/dhcpd.conf
     ssh $OTHER -t sudo systemctl restart isc-dhcp-server.service
 fi
