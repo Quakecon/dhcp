@@ -10,11 +10,11 @@ fi
 
 cp dhcpd.conf* /etc/dhcp
 mv /etc/dhcp/dhcpd.conf.$(hostname -s) /etc/dhcp/dhcpd.conf
-systemctl restart dhcpd
+sudo systemctl restart isc-dhcp-server.service
 
 if [ "$OTHER"x != "x" ]; then
     scp dhcpd.conf* ${OTHER}:/etc/dhcp
     ssh $OTHER rm /etc/dhcp/dhcpd.conf.core1
     ssh $OTHER mv /etc/dhcp/dhcpd.conf.core2 /etc/dhcp/dhcpd.conf
-    ssh $OTHER systemctl restart dhcpd
+    ssh $OTHER sudo systemctl restart isc-dhcp-server.service
 fi
