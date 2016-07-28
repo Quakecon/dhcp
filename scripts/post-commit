@@ -1,21 +1,16 @@
 #!/bin/bash
 
-if [ "$(hostname -s)" == "core1" ]; then
-    OTHER="172.16.1.101"
-elif [ "$(hostname -s)" == "core2" ]; then
-    OTHER="172.16.1.100"
-else
-    OTHER=""
-fi
+PRIMARY="172.16.1.100"
+SECONDARY="172.16.1.101"
+PRIMARY_WAIT=15  # seconds to wait for primary to recover
 
-cp dhcpd.conf* /etc/dhcp
-mv /etc/dhcp/dhcpd.conf.$(hostname -s) /etc/dhcp/dhcpd.conf
-sudo systemctl restart isc-dhcp-server.service
+for host in "$PRIMARY $SECONDARY"; do
+    scp dhcpd.conf* ${host}:/etc/dhcp
+    ssh ${host} mv /etc/dhcp/dhcpd.conf.\$\(hostname -s\) /etc/dhcp/dhcpd.conf
+    sudo systemctl restart isc-dhcp-server.service
+    if [ "$host"x == "$PRIMARY"x ]; then
+	echo "Waiting for $PRIMARY_WAIT sec. for the primary to rejoin"
+	sleep $PRIMARY_WAIT
+    fi
+done
 
-if [ "$OTHER"x != "x" ]; then
-    echo "Waiting for a bit before I kick the other node"
-    sleep 10
-    scp dhcpd.conf* ${OTHER}:/etc/dhcp
-    ssh $OTHER mv /etc/dhcp/dhcpd.conf.$(hostname -s) /etc/dhcp/dhcpd.conf
-    ssh $OTHER -t sudo systemctl restart isc-dhcp-server.service
-fi
