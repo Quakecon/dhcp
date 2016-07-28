@@ -4,7 +4,7 @@ PRIMARY="172.16.1.100"
 SECONDARY="172.16.1.101"
 PRIMARY_WAIT=15  # seconds to wait for primary to recover
 
-for host in "$PRIMARY $SECONDARY"; do
+for host in $PRIMARY $SECONDARY; do
     scp dhcpd.conf* ${host}:/etc/dhcp
     ssh ${host} mv /etc/dhcp/dhcpd.conf.\$\(hostname -s\) /etc/dhcp/dhcpd.conf
     sudo systemctl restart isc-dhcp-server.service
