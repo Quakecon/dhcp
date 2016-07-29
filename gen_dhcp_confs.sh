@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 SECOND_OCTET=$1
 START_RANGE=$2
 END_RANGE=$3
