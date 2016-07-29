@@ -1,0 +1,18 @@
+[Unit]
+Description=DHCP Webstatus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+WorkingDirectory=/tmp
+ExecStart=/usr/bin/twistd -n \
+	         --logfile - \
+		 -u nobody \
+		 -g dhcpd \
+		 web \
+		 -p 80 \
+	         --resource-script=/usr/local/dhcpstatus.py \
+		 --path=/usr/local/dhcpstatus/scripts
+
+[Install]
+WantedBy=multi-user.target
