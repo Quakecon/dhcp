@@ -1,8 +1,8 @@
-subnet 12.193.242.0 netmask 255.255.255.192 {
+subnet 8.40.217.128 netmask 255.255.255.192 {
   option subnet-mask 255.255.255.192;
-  option routers 12.193.242.1;
+  option routers 8.40.217.129;
   pool {
     failover peer "dhcp-failover";
-    range 12.193.242.2 12.193.242.46;
+    range 8.40.217.130 8.40.217.174;
   }
 }
