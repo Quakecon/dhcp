@@ -44,7 +44,7 @@ subnet 172.16.14.0 netmask 255.255.255.0 {
 shared-network NOC {
   subnet 8.40.217.192 netmask 255.255.255.224 {
     option routers 8.40.217.193;
-    option domain-name-servers 182.16.1.102, 172.16.1.103, 172.16.1.104;
+    option domain-name-servers 172.16.1.102, 172.16.1.103, 172.16.1.104;
     pool {
       failover peer "dhcp-failover";
       range 8.40.217.193 8.40.217.222;
