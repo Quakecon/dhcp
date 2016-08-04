@@ -1,5 +1,6 @@
 # SERVER
 subnet 172.16.1.0 netmask 255.255.255.0 {
+#$ Servers
   option subnet-mask 255.255.255.0;
   option routers 172.16.1.1;
   pool {
@@ -14,6 +15,7 @@ subnet 172.16.1.0 netmask 255.255.255.0 {
 # NOC Wireless
 #
 subnet 172.16.8.0 netmask 255.255.255.0 {
+#$ NOC Wireless
   option subnet-mask 255.255.255.0;
   option routers 172.16.8.1;
   pool {
@@ -42,6 +44,7 @@ subnet 172.16.14.0 netmask 255.255.255.0 {
 }
 
 shared-network NOC {
+#$ NOC
   subnet 8.40.217.192 netmask 255.255.255.224 {
     option routers 8.40.217.193;
     option domain-name-servers 172.16.1.102, 172.16.1.103, 172.16.1.104;
